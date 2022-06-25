@@ -2414,16 +2414,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			.image.center {
-				display: block;
-				margin: 0 5em 0 5em ;
-				width: 80%;
-			}
-
-				.image.center img {
-					width: 100%;
-				}
-
 /* List */
 
 	ol {
