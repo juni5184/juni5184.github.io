@@ -1,338 +1,236 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Juni_DEV Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<script>
-	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junhee Park - Professional CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .section-title {
+            font-size: 1.75rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* Gray-800 */
+            margin-bottom: 1.5rem; /* mb-6 */
+            border-bottom: 2px solid #d1d5db; /* Gray-300 */
+            padding-bottom: 0.5rem; /* pb-2 */
+        }
+        .header-bg {
+            background-color: #062ee1; /* Professional Blue */
+        }
+        .profile-img {
+            border: 4px solid #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
+<body class="text-gray-800">
+    <div class="container p-8 md:p-10 lg:p-12">
+        <!-- Header Section -->
+        <header class="header-bg text-white p-6 md:p-8 lg:p-10 rounded-t-lg flex flex-col md:flex-row items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-8">
+            <img src="./images/juni_profile.jpg" alt="Profile Picture" class="profile-img w-32 h-32 rounded-full object-cover">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold mb-2">Junhee Park (Juni)</h1>
+                <p class="text-xl font-medium mb-1">AI Researcher | Software Engineer</p>
+                <p class="text-lg">Email: juni5184@yonsei.ac.kr </p>
+                <p class="text-lg">LinkedIn: <a href="https://www.linkedin.com/in/juni-park" class="text-white hover:underline" target="_blank">linkedin.com/in/juni-park</a> | GitHub: <a href="https://github.com/juni5184" class="text-white hover:underline" target="_blank">github.com/juni5184</a> | Portfolio: <a href="https://juni5184.github.io" class="text-white hover:underline" target="_blank">juni5184.github.io</a> | TechBlog: <a href="https://juni5184.tistory.com" class="text-white hover:underline" target="_blank">Juni_DEV</a></p>
+            </div>
+        </header>
 
-<body class="is-preload">
+        <!-- Summary Section -->
+        <section id="summary" class="py-8 px-6 md:px-8 lg:px-10">
+            <h2 class="section-title">Summary</h2>
+            <p class="text-lg leading-relaxed">
+                I have a strong interest in <b>Multimodal AI</b>, focusing on <b>Robotics</b>.<br>
+                Clear communication and teamwork are important to me,
+                and I approach new challenges with enthusiasm and a willingness to learn.
+                My experience includes working at <b>XL8</b>, where I contributed to projects aimed at enhancing machine translation performance, and at <b>RealSmart</b>, where I developed Android apps and managed databases, broadening my technical expertise.
+                Additionally, I have led teams in Silicon Valley Bootcamp, refining my project managing and problem-solving skills along the way.
+            </p>
+        </section>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+        <!-- Publications Section -->
+        <section id="publications" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
+            <h2 class="section-title">Publications</h2>
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<span class="logo"><img src="images/logo.svg" alt="" /></span>
-			<h1>Juni_DEV</h1>
-			<p>
-				<b>"Until AI reaches every corner of the world"</b></br>
-				<a href="https://drive.google.com/file/d/1bJNuQzh-FyP-s-tZHoTXYsLj3tScw-R7/view?usp=drive_link">Resume</a>
-				<a href="https://www.linkedin.com/in/juni-park/">/ LinkedIn</a>
-				<a href="https://github.com/juni5184">/ Github</a>
-				<a href="https://juni5184.tistory.com/">/ TechBlog</a>
-			</p>
-		</header>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">GuideDog: A Real-World Egocentric Multimodal Dataset for Blind and Low-Vision Accessibility-Aware Guidance</h3>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Junhyeok Kim*, Jaewoo Park*, <b>Junhee Park</b>, Sangeyl Lee, Jiwan Chung, Jisung Kim, Ji Hoon Joung, Youngjae Yu. (2025). *arXiv preprint arXiv:2503.12844*. 
+                        <a href="https://arxiv.org/abs/2503.12844" class="text-blue-600 hover:underline" target="_blank">[Link to Paper]</a></li>
+                </ul>
+            </div>
+        </section>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li><a href="#intro" class="active">Introduction</a></li>
-				<li><a href="#cta">Skills</a></li>
-				<li><a href="#first">Experience</a></li>
-				<li><a href="#second">Study & Review</a></li>
-			</ul>
-		</nav>
+        <!-- Education Section -->
+        <section id="education" class="py-8 px-6 md:px-8 lg:px-10 ">
+            <h2 class="section-title">Education</h2>
 
-		<!-- Main -->
-		<div id="main">
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Integrated MS / Ph.D Program, Artificial Intelligence</h3>
+                <p class="text-lg font-medium text-gray-700">Yonsei University | Seoul, Republic of Korea</p>
+                <p class="text-md text-gray-600">Mar.2025 – Present</p>
+            </div>
 
-			<!-- Introduction -->
-			<section id="intro" class="main">
-				<div class="spotlight">
-					<div class="content">
-						<header class="major">
-							<h2>박준희 (Juni Park)</h2>
-						</header>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">B.S. in Applied Software Engineering</h3>
+                <p class="text-lg font-medium text-gray-700">Hanyang Cyber University | Seoul, Republic of Korea</p>
+                <p class="text-md text-gray-600">Mar.2020 – Feb.2024</p>
+                <p class="text-md text-gray-600">GPA: 4.07/4.5</p>
+            </div>
+        </section>
 
-						<p style="font-size:18px;">
-							I have a strong interest in <b>Multimodal AI</b>, <br>
-							focusing on optimizing <b>video analysis</b> to address inefficiencies.<br>
-							<b>Clear communication</b> and <b>teamwork</b> are important to me, <br>
-							and I approach <b>new challenges with enthusiasm and a willingness to learn</b>.<br>
-							My experience includes working at <b><i>XL8</i></b>, where I contributed to projects aimed at enhancing <b>machine translation</b> performance,
-							and at <b><i>RealSmart</i></b>, where I developed Android apps and <b>managed databases</b>, broadening my technical expertise. <br>
-							Additionally, I have <b>led teams in Kaggle competitions</b>, refining my <b>data analysis</b> and <b>problem-solving</b> skills along the way.
-							<br>
-						<ul class="actions">
-							<li><a href="aboutme.html" class="button">About Me</a></li>
-						</ul>
-					</div>
+        <!-- Professional & Research Experience Section -->
+        <section id="experience" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
+            <h2 class="section-title">Work Experience</h2>
 
-					<section>
-						<span class="image"><img src="images/juni_profile.jpg" alt="" /></span>
-						<dl class="alt" style="padding-inline: 60px;">
-							<dt>Email</dt>
-							<dd>juni5184@gmail.com</dd>
-							<dt>LinkedIn</dt>
-							<dd><a href="https://www.linkedin.com/in/juni-park">juni-park</a></dd>
-							<dt>Github</dt>
-							<dd><a href="https://github.com/juni5184">juni5184</a></dd>
-							<dt>TechBlog</dt>
-							<dd><a href="https://juni5184.tistory.com">Juni_DEV</a></dd>
-						</dl>
-					</section>
-				</div>
-			</section>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">AI Research Intern</h3>
+                <p class="text-lg font-medium text-gray-700">XL8 | U.S. Headquarter</p>
+                <p class="text-md text-gray-600 mb-2">Oct.2023 – Apr.2024</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Optimized ParaCrawl Dataset: Filtered high-quality translation data using LaBSE with language-specific thresholds, automating the process and uploading to AWS S3.</li>
+                    <li class="mb-1">Enhanced Translation Accuracy: Improved translation accuracy for German, Portuguese, and Vietnamese by incorporating number word augmentation and adding various targeted test cases.</li>
+                    <li class="mb-1">Integrated Translation Evaluation: Combined translation codes from XL8, Google, and DeepL, and evaluated performance using BLEU, COMET, and MetricX23 to improve quality assessments.</li>
+                    <li class="mb-1">Developed Transliteration Module: Integrated effective transliteration modules for English to Korean and Japanese after comparative analysis.</li>
+                </ul>
+            </div>
 
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Software Engineer</h3>
+                <p class="text-lg font-medium text-gray-700">RealSmart Corporation | Seoul, Korea</p>
+                <p class="text-md text-gray-600 mb-2">Nov.2020 – Dec.2021</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a WordTEST Android app using JAVA and MSSQL with high-performance database integration.</li>
+                    <li class="mb-1">Managed and optimized over 90 MSSQL databases, handling performance tuning, backups, and security.</li>
+                    <li class="mb-1">Refined a VSTO-based reporting program used by academic and private institutions.</li>
+                    <li class="mb-1">Enhanced a Windows application, adopted by 500+ academies, 200+ universities, and 300+ businesses, including Samsung and Seoul National University.</li>
+                </ul>
+            </div>
+        </section>
 
-			<!-- Get Started -->
-			<section id="cta" class="main special">
-				<header class="major">
-					<h2>Skills</h2>
-					<!-- Table -->
-					<section>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>
-											<center>FIELD</center>
-										</th>
-										<th>
-											<center>SKILL LIST</center>
-										</th>
-										<th>
-											<center>LEVEL</center>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Artificial Intelligence</td>
-										<td>
-											<img src="https://img.shields.io/badge/Python-3776AB?&style=flat-square&logo=Python&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/Tensorflow-ff6f00?&style=flat-square&logo=Tensorflow&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/PyTorch-ee4c2c?&style=flat-square&logo=Pytorch&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=Anaconda&logoColor=white"
-												height=25 />
+        <!-- Projects Section -->
+        <section id="projects" class="py-8 px-6 md:px-8 lg:px-10 ">
+            <h2 class="section-title">Projects</h2>
 
-										</td>
-										<td>
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-										</td>
-									</tr>
-									<tr>
-										<td>Back-End</td>
-										<td>
-											<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"
-												height=25 />
-											<img src="https://img.shields.io/badge/Amazon EC2-ff9900?style=flat-square&logo=AmazonEc2&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/Amazon S3-FF9900?style=flat-square&logo=AmazonS3&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/Apache-D22128?style=flat-square&logo=Apache&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white"
-												height=25 />
-										</td>
-										<td>
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-										</td>
-									</tr>
-									<tr>
-										<td>Android</td>
-										<td>
-											<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/Kotlin-3DDC84?style=flat-square&logo=Kotlin&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"
-												height=25 />
-										</td>
-										<td>
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-										</td>
-									</tr>
-									
-									<tr>
-										<td>Database</td>
-										<td>
-											<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/MSSQL-5e5e5e?style=flat-square&logo=MSSQL&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=SQLite&logoColor=white"
-												height=25 />
-										</td>
-										<td>
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-										</td>
-									</tr>
-									<tr>
-										<td>Front-End</td>
-										<td>
-											<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"
-												height=25 />
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">GemmaPaperQA - Google Machine Learning Bootcamp</h3>
+                <p class="text-lg font-medium text-gray-700 mb-2">Seoul, Korea | Hugging Face Model | Jul.2024 – Oct.2024</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a QA system for academic papers using the Gemma2 open-source model and LangChain.</li>
+                    <li class="mb-1">Fine-tuned the model with LoRA to significantly improve performance.</li>
+                </ul>
+            </div>
 
-										</td>
-										<td>
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-										</td>
-									</tr>
-									
-									<tr>
-										<td>ETC</td>
-										<td>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">ISIC 2024: Skin Cancer Detection with 3D-TBP - Kaggle</h3>
+                <p class="text-lg font-medium text-gray-700 mb-2">Aug.2024 – Oct.2024</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a skin cancer detection model from 3D body images using an ensemble of LGBM, XGBoost, and CatBoost.</li>
+                    <li class="mb-1">Achieved Top 15% performance in the competition.</li>
+                </ul>
+            </div>
 
-											<img src="https://img.shields.io/badge/Unity-FFFFFF?style=flat-square&logo=Unity&logoColor=black"
-												height=25 />
-											<img src="https://img.shields.io/badge/C Sharp-239120?style=flat-square&logo=CSharp&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/VSTO-CC3333?style=flat-square&logo=VSTO&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/. NET-512bd4?style=flat-square&logo=.Net&logoColor=white"
-												height=25 />
-											<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C++&logoColor=white"
-												height=25 />
-										</td>
-										<td>
-											<img src="/images/star.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-											<img src="/images/nostar.png" alt="" style="max-width:40px; width:15%; max-height:auto;" />
-										</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td style="font-size:0.7em;text-align:right;">
-											1개 : 수정 및 기본 사용<br>
-											2개 : 간단한 프로젝트 경험<br>
-											3개 : 실무적 적용<br>
-											4개 : 고급 기능 활용<br>
-											5개 : 전문가 수준의 능숙함</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-				</header>
-			</section>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">MATEY (Friend matching app for co-purchase) - SVB</h3>
+                <p class="text-lg font-medium text-gray-700 mb-2">San Francisco, CA | Jun.2023 – Sep.2023</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Led a team of 6 engineers to develop an app that matches users based on shared buying preferences.</li>
+                    <li class="mb-1">Developed a similarity algorithm using Word2Vec and created designs with a Generative AI tool, Midjourney.</li>
+                </ul>
+            </div>
 
-			<!-- First Section -->
-			<section id="first" class="main special">
-				<header class="major">
-					<h2>Experience</h2>
-				</header>
-				<ul class="features">
-					<li>
-						<span class="icon solid major style2 fa-exchange-alt"></span>
-						<h3>XL8</h3>
-						<p>AI-driven media localization <br>with context-aware translations.<br>Research Intern</p>
-					</li>
-					<li>
-						<span class="icon solid major style1 fa-clipboard-list"></span>
-						<h3>RealSmart</h3>
-						<p>OMR-based testing, survey analysis, and smart tools for education and business.</p>
-					</li>
-					<li>
-						<span class="icon major style3 fa-copy"></span>
-						<h3>Deepfake Detection Challenge</h3>
-						<p>Developed a model to detect <br>deepfake videos and classify them <br>as REAL or FAKE.</p>
-					</li>
-				</ul>
-				<footer class="major">
-					<ul class="actions special">
-						<li><a href="project.html" class="button">See More</a></li>
-					</ul>
-				</footer>
-			</section>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Deepfake Detection Challenge - Kaggle</h3>
+                <p class="text-lg font-medium text-gray-700 mb-2">Jan.2020 – Mar.2020</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a deepfake detection model using Tensorflow and Pytorch, integrating CNN and RNN models.</li>
+                    <li class="mb-1">Improved model performance by 52.3%, managing a team of 7 engineers.</li>
+                </ul>
+            </div>
 
-			<!-- Second Section -->
-			<section id="second" class="main special">
-				<header class="major">
-					<h2>Study & Review</h2>
-				</header>
-				<ul class="statistics">
-					<li class="style2">
-						<span class="icon fa-folder-open"></span>
-						<strong>3+</strong> Projects
-					</li>
-					<li class="style5">
-						<span class="icon fa-gem"></span>
-						<strong>2</strong> Certifications
-					</li>
-					<li class="style4">
-						<span class="icon solid fa-laptop"></span>
-						<strong>5</strong> Paper Review
-					</li>
-				</ul>
-				<p class="content">2017년부터 국비 지원교육으로 개발 공부를 시작해서 현재까지 인공지능 모델 구현,
-					앱 개발, 웹 개발, 서버, 데이터베이스 등
-					다양한 분야의 개발에 도전해보고 있습니다.<br>
-					도전을 두려워하지 않고 필요한 정보를 빠르게 습득하여 개발에 적용해 보는 것을 좋아합니다.
-					커뮤니케이션을 중요하게 생각하고 여러 사람과 같이 일하는 것을 즐깁니다.
-				</p>
-				<footer class="major">
-					<ul class="actions special">
-						<li><a href="study.html" class="button">See More Study</a></li>
-						<li><a href="review.html" class="button">See More Review</a></li>
-					</ul>
-				</footer>
-			</section>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Benchmarking CNN Models for Image Classification Performance</h3>
+                <p class="text-lg font-medium text-gray-700 mb-2">Benchmark | Nov.2018 – Apr.2019</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Evaluated 13 CNN models for image classification, achieving a 97.7% accuracy with ResNet-152.</li>
+                </ul>
+            </div>
 
-		</div>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Oneday Voca - English Vocabulary Learning App (Android)</h3>
+                <p class="text-lg font-medium text-gray-700 mb-2">Jul.2018 – Oct.2018</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed an English vocabulary app with OCR using OpenCV and Vision API.</li>
+                    <li class="mb-1">Built end-to-end server infrastructure on AWS EC2, Apache, PHP, MySQL, and Linux.</li>
+                </ul>
+            </div>
+        </section>
 
-		<!-- Footer -->
-		<footer id="footer">
+        <!-- Skills Section -->
+        <section id="skills" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Frameworks & Libraries:</h3>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>PyTorch, TensorFlow</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Databases:</h3>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>MSSQL, MySQL, SQLite</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Server & Cloud:</h3>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>Linux, AWS EC2, S3, Apache, PHP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Languages:</h3>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>English (Professional), Korean (Native)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-		</footer>
+        <!-- Awards & Honors Section -->
+        <section id="awards" class="py-8 px-6 md:px-8 lg:px-10">
+            <h2 class="section-title">Certificates & Awards</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li class="mb-1">TOEIC: 920 / 990 — ETS (Jun.2024)</li>
+                <li class="mb-1">AICE (AI Certificate for Everyone) Associate — KT (Jul.2022)
+                    <ul class="list-circle pl-5 text-gray-600">
+                        <li>Data analysis, processing, and modeling using Tensorflow, Numpy, Pandas, Matplotlib, and Scikit-learn.</li>
+                    </ul>
+                </li>
+                <li class="mb-1">Tensorflow Developer Certificate — TensorFlow (May.2022)</li>
+            </ul>
+        </section>
 
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 py-6 px-6 md:px-8 lg:px-10 border-t border-gray-200 mt-8">
+            <p>&copy; 2025 Junhee Park. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-
 </html>
