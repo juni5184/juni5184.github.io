@@ -43,8 +43,8 @@
         }
 
         .header-bg {
-            background-color: #0000CD;
-            /* Professional Blue */
+            background-color: #1002ce;
+            /* Darker, more professional blue-gray */
         }
 
         .profile-img {
@@ -75,11 +75,20 @@
             </div>
         </header>
 
+        <!-- Research Interests Section -->
+        <section id="research-interests" class="py-8 px-6 md:px-8 lg:px-10">
+            <h2 class="section-title">Research Interests</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li class="mb-1">Robot Learning</li>
+                <li class="mb-1">Human-Robot Interaction</li>
+                <li class="mb-1">Vision-Language Models (VLMs)</li>
+            </ul>
+        </section>
         <!-- Summary Section -->
-        <section id="summary" class="py-8 px-6 md:px-8 lg:px-10">
+        <section id="summary" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
             <h2 class="section-title">Summary</h2>
             <p class="text-lg leading-relaxed">
-                I have a strong interest in <b>Multimodal AI</b>, focusing on <b>Robotics</b>.<br>
+                I have a strong interest in <b>Multimodal AI</b>, focusing on <b>Robot Learning</b>.<br>
                 Clear communication and teamwork are important to me,
                 and I approach new challenges with enthusiasm and a willingness to learn.
                 My experience includes working at <b>XL8</b>, where I contributed to projects aimed at enhancing machine
@@ -90,8 +99,9 @@
             </p>
         </section>
 
+
         <!-- Publications Section -->
-        <section id="publications" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
+        <section id="publications" class="py-8 px-6 md:px-8 lg:px-10">
             <h2 class="section-title">Publications</h2>
 
             <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
@@ -99,49 +109,9 @@
                     Blind and Low-Vision Accessibility-Aware Guidance</h3>
                 <ul class="list-disc pl-5 text-gray-700">
                     <li class="mb-1">Junhyeok Kim*, Jaewoo Park*, <b>Junhee Park</b>, Sangeyl Lee, Jiwan Chung, Jisung
-                        Kim, Ji Hoon Joung, Youngjae Yu. (2025). *arXiv preprint arXiv:2503.12844*.
-                        <a href="https://arxiv.org/abs/2503.12844" class="text-blue-600 hover:underline"
-                            target="_blank">[Link to Paper]</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Professional & Research Experience Section -->
-        <section id="experience" class="py-8 px-6 md:px-8 lg:px-10">
-            <h2 class="section-title">Work Experience</h2>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">AI Research Intern</h3>
-                <p class="text-lg font-medium text-gray-700">XL8 | U.S. Headquarter</p>
-                <p class="text-md text-gray-600 mb-2">Oct.2023 – Apr.2024</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Optimized ParaCrawl Dataset: Filtered high-quality translation data using LaBSE
-                        with language-specific thresholds, automating the process and uploading to AWS S3.</li>
-                    <li class="mb-1">Enhanced Translation Accuracy: Improved translation accuracy for German,
-                        Portuguese, and Vietnamese by incorporating number word augmentation and adding various targeted
-                        test cases.</li>
-                    <li class="mb-1">Integrated Translation Evaluation: Combined translation codes from XL8, Google, and
-                        DeepL, and evaluated performance using BLEU, COMET, and MetricX23 to improve quality
-                        assessments.</li>
-                    <li class="mb-1">Developed Transliteration Module: Integrated effective transliteration modules for
-                        English to Korean and Japanese after comparative analysis.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Software Engineer</h3>
-                <p class="text-lg font-medium text-gray-700">RealSmart Corporation | Seoul, Korea</p>
-                <p class="text-md text-gray-600 mb-2">Nov.2020 – Dec.2021</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a WordTEST Android app using JAVA and MSSQL with high-performance
-                        database integration.</li>
-                    <li class="mb-1">Managed and optimized over 90 MSSQL databases, handling performance tuning,
-                        backups, and security.</li>
-                    <li class="mb-1">Refined a VSTO-based reporting program used by academic and private institutions.
-                    </li>
-                    <li class="mb-1">Enhanced a Windows application, adopted by 500+ academies, 200+ universities, and
-                        300+ businesses, including Samsung and Seoul National University.</li>
+                        Kim, Ji Hoon Joung, Youngjae Yu.
+                        (2025). *arXiv preprint arXiv:2503.12844*. <a href="https://arxiv.org/abs/2503.12844"
+                            class="text-blue-600 hover:underline" target="_blank">[Link to Paper]</a></li>
                 </ul>
             </div>
         </section>
@@ -165,24 +135,162 @@
             </div>
         </section>
 
+        <!-- Professional & Research Experience Section -->
+        <section id="experience" class="py-8 px-6 md:px-8 lg:px-10">
+            <h2 class="section-title">Professional & Research Experience</h2>
 
-        <!-- Awards & Honors Section -->
-        <section id="certificates" class="py-8 px-6 md:px-8 lg:px-10">
-            <h2 class="section-title">Certificates</h2>
-            <ul class="list-disc pl-5 text-gray-700">
-                <li class="mb-1"><b>TOEIC</b>: <b>920</b> / 990 — ETS (Jun.2024)</li>
-                <li class="mb-1"><b>AICE</b> (AI Certificate for Everyone) Associate — KT (Jul.2022)
-                    <ul class="list-circle pl-5 text-gray-600">
-                        <li>Data analysis, processing, and modeling using Tensorflow, Numpy, Pandas, Matplotlib, and
-                            Scikit-learn.</li>
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h4 class="text-xl font-semibold text-gray-900 mb-4 ">MIR(Multimodal Intelligence Research) Lab </h4>
+
+                <div class="mb-6">
+                    <h5 class="text-lg font-semibold text-gray-900">CANVAS2: Scale-up pipeline to extend COMMAND dataset
+                        to Quadrupeds using CANVAS</h5>
+                    <p class="text-md text-gray-600 mb-2">Collaborators: Sungwoong Kim, Minseo Kim, Junhee Park, Siyeol
+                        Kim, Jihwan Yu | Mar 2025 – Present</p>
+                    <p class="text-md text-gray-600 mb-1"><strong>Contribution</strong></p>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li class="mb-1">Reconstructed the 
+                            <a href="https://arxiv.org/abs/2410.01273" style="color: #007bff;" target="_blank">CANVAS(previous work)</a> 
+                            VLA pipeline and redesigned the architecture based on Qwen2.5-VL.</li>
+                        <li class="mb-1">Led end-to-end system redesign and implementation aligned with original
+                            research goals.</li>
+                        <li class="mb-1">Integrated real-time communication with Unitree Go2 via ROS2 topics, using
+                            camera and sensor (coordinate) inputs for multimodal processing.</li>
                     </ul>
-                </li>
-                <li class="mb-1"><b>Tensorflow Developer Certificate</b> — TensorFlow (May.2022)</li>
-            </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h5 class="text-lg font-semibold text-gray-900">GuideDog: A Real-World Multimodal Dataset for Blind
+                        and Low-Vision Accessibility-Aware Guidance</h5>
+                    <p class="text-md text-gray-600 mb-2">Collaborators: Junhyeok Kim, Jaewoo Park, Junhee Park, Sanyeol
+                        Lee | Dec 2024 – Mar 2025</p>
+                    <p class="text-md text-gray-600 mb-1"><strong>Contribution</strong></p>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li class="mb-1">Conducted research on official verbal assistance guidelines to support
+                            individuals with blindness or low vision (BLV).</li>
+                        <li class="mb-1">Designed a simple BLV-focused knowledge graph and evaluated its effectiveness
+                            in enhancing VLM-based navigation.</li>
+                        <li class="mb-1">Built and managed Label Studio projects for generating high-quality
+                            gold-labeled descriptions, including inter-annotator agreement analysis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">XL8 - AI Research Intern</h3>
+                <p class="text-lg font-medium text-gray-700">U.S. Headquarter</p>
+                <p class="text-md text-gray-600 mb-1">Oct.2023 – Apr.2024</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Optimized ParaCrawl Dataset: Filtered high-quality translation data using LaBSE
+                        with language-specific thresholds, automating the process and uploading to AWS S3.</li>
+                    <li class="mb-1">Enhanced Translation Accuracy: Improved translation accuracy for German,
+                        Portuguese, and Vietnamese by incorporating number word augmentation and adding various targeted
+                        test cases.</li>
+                    <li class="mb-1">Integrated Translation Evaluation: Combined translation codes from XL8, Google, and
+                        DeepL, and evaluated performance using BLEU, COMET, and MetricX23 to improve quality
+                        assessments.</li>
+                    <li class="mb-1">Developed Transliteration Module: Integrated effective transliteration modules for
+                        English to Korean and Japanese after comparative analysis.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">RealSmart Corporation - Software Engineer</h3>
+                <p class="text-lg font-medium text-gray-700">Seoul, Korea</p>
+                <p class="text-md text-gray-600 mb-2">Nov.2020 – Dec.2021</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a WordTEST Android app using JAVA and MSSQL with high-performance
+                        database integration.</li>
+                    <li class="mb-1">Managed and optimized over 90 MSSQL databases, handling performance tuning,
+                        backups, and security.</li>
+                    <li class="mb-1">Refined a VSTO-based reporting program used by academic and private institutions.
+                    </li>
+                    <li class="mb-1">Enhanced a Windows application, adopted by 500+ academies, 200+ universities, and
+                        300+ businesses, including Samsung and Seoul National University.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">GemmaPaperQA - Google Machine Learning Bootcamp
+                    <a href="https://huggingface.co/halyn/gemma2-2b-it-finetuned-paperqa"
+                        class="text-blue-600 hover:underline" target="_blank">[Hugging Face]</a>
+                </h3>
+                <p class="text-md text-gray-600 mb-2">Jul.2024 – Oct.2024</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a QA system for academic papers using the Gemma2 open-source model and
+                        LangChain.</li>
+                    <li class="mb-1">Fine-tuned the model with LoRA to significantly improve performance.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">ISIC 2024: Skin Cancer Detection with 3D-TBP - Kaggle
+                </h3>
+                <p class="text-md text-gray-600 mb-2">Aug.2024 – Oct.2024</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a skin cancer detection model from 3D body images using an ensemble of
+                        LGBM, XGBoost, and CatBoost.</li>
+                    <li class="mb-1">Achieved Top 15% performance in the competition.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">MATEY (Friend matching app for co-purchase) - Silicon
+                    Valley Bootcamp</h3>
+                <p class="text-md text-gray-600 mb-2">San Francisco, CA | Jun.2023 – Sep.2023</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Presented the project at Google’s San Francisco office and won <strong>1st
+                            place</strong> among
+                        participating bootcamp teams.</li>
+                    <li class="mb-1">Led a team of six engineers to develop a friend-matching app based on shared
+                        purchasing preferences.</li>
+                    <li class="mb-1">Developed a user similarity algorithm using Word2Vec and created visual designs
+                        using the generative AI tool Midjourney.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Deepfake Detection Challenge - Kaggle</h3>
+                <p class="text-md text-gray-600 mb-2">Jan.2020 – Mar.2020</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed a deepfake detection model using Tensorflow and Pytorch, integrating CNN
+                        and RNN models.</li>
+                    <li class="mb-1">Improved model performance by 52.3%, managing a team of 7 engineers.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Benchmarking CNN Models for Image Classification
+                    Performance
+                    <a href="https://docs.google.com/presentation/d/1-pY5OLVmPyES83dIccfho1gL5vlFE2Gh971OejTv5AE/edit?usp=sharing"
+                        class="text-blue-600 hover:underline" target="_blank">[Benchmark]</a>
+                </h3>
+                <p class="text-md text-gray-600 mb-2">Nov.2018 – Apr.2019</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Evaluated 13 CNN models for image classification, achieving a 97.7% accuracy with
+                        ResNet-152.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
+                <h3 class="text-xl font-semibold text-gray-900">Oneday Voca - English Vocabulary Learning App (Android)
+                </h3>
+                <p class="text-md text-gray-600 mb-2">Jul.2018 – Oct.2018</p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-1">Developed an English vocabulary app with OCR using OpenCV and Vision API.</li>
+                    <li class="mb-1">Built end-to-end server infrastructure on AWS EC2, Apache, PHP, MySQL, and Linux.
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
+        <section id="skills" class="py-8 px-6 md:px-8 lg:px-10">
             <h2 class="section-title">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 <div>
@@ -207,86 +315,25 @@
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Languages:</h3>
                     <ul class="list-disc pl-5 text-gray-700">
                         <li>English (Professional), Korean (Native)</li>
+                        <li>Java (for Android)</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-8 px-6 md:px-8 lg:px-100">
-            <h2 class="section-title">Projects</h2>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">GemmaPaperQA - Google Machine Learning Bootcamp
-                    <a href="https://huggingface.co/halyn/gemma2-2b-it-finetuned-paperqa"
-                        class="text-blue-600 hover:underline" target="_blank">[Hugging Face]</a>
-                </h3>
-                <p class="text-lg font-medium text-gray-700 mb-2">Jul.2024 – Oct.2024</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a QA system for academic papers using the Gemma2 open-source model and
-                        LangChain.</li>
-                    <li class="mb-1">Fine-tuned the model with LoRA to significantly improve performance.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">ISIC 2024: Skin Cancer Detection with 3D-TBP - Kaggle
-                </h3>
-                <p class="text-lg font-medium text-gray-700 mb-2">Aug.2024 – Oct.2024</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a skin cancer detection model from 3D body images using an ensemble of
-                        LGBM, XGBoost, and CatBoost.</li>
-                    <li class="mb-1">Achieved Top 15% performance in the competition.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">MATEY (Friend matching app for co-purchase) - Silicon
-                    Valley Bootcamp</h3>
-                <p class="text-lg font-medium text-gray-700 mb-2">San Francisco, CA | Jun.2023 – Sep.2023</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Led a team of 6 engineers to develop an app that matches users based on shared
-                        buying preferences.</li>
-                    <li class="mb-1">Developed a similarity algorithm using Word2Vec and created designs with a
-                        Generative AI tool, Midjourney.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Deepfake Detection Challenge - Kaggle</h3>
-                <p class="text-lg font-medium text-gray-700 mb-2">Jan.2020 – Mar.2020</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a deepfake detection model using Tensorflow and Pytorch, integrating CNN
-                        and RNN models.</li>
-                    <li class="mb-1">Improved model performance by 52.3%, managing a team of 7 engineers.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Benchmarking CNN Models for Image Classification
-                    Performance
-                    <a href="https://docs.google.com/presentation/d/1-pY5OLVmPyES83dIccfho1gL5vlFE2Gh971OejTv5AE/edit?usp=sharing"
-                        class="text-blue-600 hover:underline" target="_blank">[Benchmark]</a>
-                </h3>
-                <p class="text-lg font-medium text-gray-700 mb-2">Nov.2018 – Apr.2019</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Evaluated 13 CNN models for image classification, achieving a 97.7% accuracy with
-                        ResNet-152.</li>
-                </ul>
-            </div>
-
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Oneday Voca - English Vocabulary Learning App (Android)
-                </h3>
-                <p class="text-lg font-medium text-gray-700 mb-2">Jul.2018 – Oct.2018</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed an English vocabulary app with OCR using OpenCV and Vision API.</li>
-                    <li class="mb-1">Built end-to-end server infrastructure on AWS EC2, Apache, PHP, MySQL, and Linux.
-                    </li>
-                </ul>
-            </div>
+        <!-- Awards & Honors Section -->
+        <section id="awards" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
+            <h2 class="section-title">Certificates & Awards</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li class="mb-1">TOEIC: 920 / 990 — ETS (Jun.2024)</li>
+                <li class="mb-1">AICE (AI Certificate for Everyone) Associate — KT (Jul.2022)
+                    <ul class="list-circle pl-5 text-gray-600">
+                        <li>Data analysis, processing, and modeling using Tensorflow, Numpy, Pandas, Matplotlib, and
+                            Scikit-learn.</li>
+                    </ul>
+                </li>
+                <li class="mb-1">Tensorflow Developer Certificate — TensorFlow (May.2022)</li>
+            </ul>
         </section>
 
         <!-- Footer -->
