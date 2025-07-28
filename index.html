@@ -2,341 +2,587 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junhee Park - CV</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f2f5;
-            /* Light gray background */
-            line-height: 1.6;
-        }
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juni Park - CV">
+    <meta name="author" content="Junhee Park">
+    <link rel="shortcut icon" href="favicon.ico">
 
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            background-color: #ffffff;
-            border-radius: 1rem;
-            /* Rounded corners */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-        .section-title {
-            font-size: 1.75rem;
-            /* text-3xl */
-            font-weight: 700;
-            /* font-bold */
-            color: #1f2937;
-            /* Gray-800 */
-            margin-bottom: 1.5rem;
-            /* mb-6 */
-            border-bottom: 2px solid #d1d5db;
-            /* Gray-300 */
-            padding-bottom: 0.5rem;
-            /* pb-2 */
-        }
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
 
-        .header-bg {
-            /* background-color: #4169E1; */
-            background-color: #002366;
-            /* Darker, more professional blue-gray */
-        }
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
-        .profile-img {
-            border: 4px solid #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    <!-- github calendar css -->
+    <!-- <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css"> -->
+    <!-- github activity css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css"> -->
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
-<body class="text-gray-800">
-    <div class="container p-8 md:p-10 lg:p-12">
-        <!-- Header Section -->
-        <header
-            class="header-bg text-white p-6 md:p-8 lg:p-10 rounded-t-lg flex flex-col md:flex-row items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-8">
-            <img src="./images/juni_profile.jpg" alt="Profile Picture"
-                class="profile-img w-32 h-32 rounded-full object-cover">
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl font-bold mb-2">Junhee Park (Juni)</h1>
-                <p class="text-xl font-medium mb-1">AI Research Engineer
-                <p class="text-lg">Email: juni5184@yonsei.ac.kr | CV: <a
-                        href="https://drive.google.com/file/d/1ZG_WhMilhrg7wPFY7BPs94s75Bpjf6SA/view?usp=sharing"
-                        class="text-white hover:underline" target="_blank">Junhee Park</a> | LinkedIn: <a
-                        href="https://www.linkedin.com/in/juni-park" class="text-white hover:underline"
-                        target="_blank">juni-park</a> | GitHub: <a href="https://github.com/juni5184"
-                        class="text-white hover:underline" target="_blank">juni5184</a> | TechBlog: <a
-                        href="https://juni5184.tistory.com" class="text-white hover:underline"
-                        target="_blank">Juni_DEV</a></p>
-            </div>
-        </header>
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="profile-image img-fluid float-start rounded-circle" height="200" width="200"
+                        src="assets/images/juni_profile.jpg" alt="profile image" />
+                    <div class="profile-content">
+                        <h1 class="name">Junhee Park</h1>
+                        <h2 class="desc">AI research engineer</h2>
+                        <ul class="social list-inline">
+                            <li class="list-inline-item"><a
+                                    href="https://drive.google.com/file/d/1ZG_WhMilhrg7wPFY7BPs94s75Bpjf6SA/view?usp=sharing"><i
+                                        class="fas fa-newspaper"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/juni-park"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/juni5184"><i
+                                        class="fab fa-github-alt"></i></a></li>
+                            <li class="list-inline-item last-item"><a href="https://juni5184.tistory.com"><i
+                                        class="fas fa-blog"></i></a></li>
+                        </ul>
+                    </div><!--//profile-->
+                </div><!--//col-->
+                <div class="col-12 col-md-auto">
+                    <div class="dark-mode-switch d-flex">
+                        <div class="form-check form-switch mx-auto mx-md-0">
+                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+                            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                        </div>
+                    </div><!--//dark-mode-switch-->
+                    <a class="btn btn-cta-primary" href="mailto:juni5184@yonsei.ac.kr"><i
+                            class="fas fa-paper-plane"></i> Contact Me</a>
+                </div><!--//col-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </header><!--//header-->
 
-        <!-- Research Interests Section -->
-        <section id="research-interests" class="py-8 px-6 md:px-8 lg:px-10">
-            <h2 class="section-title">Research Interests</h2>
-            <ul class="list-disc pl-5 text-gray-700">
-                <li class="mb-1">Robot Learning</li>
-                <li class="mb-1">Human-Robot Interaction</li>
-                <li class="mb-1">Vision-Language Models (VLMs)</li>
-            </ul>
-        </section>
-        <!-- Summary Section -->
-        <section id="summary" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
-            <h2 class="section-title">Summary</h2>
-            <p class="text-lg leading-relaxed">
-                My goal is to enable seamless and natural interaction between humans and robots,
-                allowing robots to integrate smoothly into human society and provide meaningful assistance in everyday
-                life.
-                I’m particularly interested in humanoid robots.
-                My research interests include Robot learning, Human-Robot Interaction (HRI) and Vision-Language Models
-                (VLMs).<br>
-            </p>
-        </section>
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p class="text-lg" style="font-size: 1.1rem;"><strong>Research Interest: Robot Learning,
+                                    Human-Robot Interaction (HRI),
+                                    Vision-Language Models (VLMs)</strong></p>
+                            <p class="text-lg leading-relaxed" style="font-size: 1.0rem;">My ultimate goal is to enable
+                                seamless and natural
+                                interaction between humans and robots,
+                                allowing robots to integrate smoothly into human society and provide meaningful
+                                assistance in everyday
+                                life.
+                                I’m particularly interested in humanoid robots.
+                                My research interests include Robot learning, Human-Robot Interaction (HRI) and
+                                Vision-Language Models
+                                (VLMs).</p>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+                <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Publication</h2>
+                        <div class="content">
+
+                            <!-- <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">Launch - The perfect Bootstrap template for SaaS products</a></h3>
+                                    
+                                <div class="desc text-start">                                    
+                                    <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                                </div>         
+                                <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                 
+                            </div>
+                            <hr class="divider" />
+                             -->
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://arxiv.org/abs/2503.12844" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/canvas2-1.png" alt="Canvas2" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://arxiv.org/abs/2503.12844"
+                                            target="_blank">Hierarchical Agent Based Synthetic Data Generation Pipeline
+                                            for Cross-Platform Robot Navigation</a></h3>
+                                    <p class="mb-2">Sungwoong Kim, Minseo Kim, <strong>Junhee Park</strong>, Siyeol Kim,
+                                        Jihwan Yu and Youngjae Yu.(2025)</p>
+                                    <p class="mb-2" style="font-size: small;">Research in robot navigation has been
+                                        accelerating rapidly with the advent of vision–language models (VLMs) that can
+                                        explicitly reason about the diverse variables present in real-world driving
+                                        scenarios. Despite the growing success of AI-based robot navigation, existing
+                                        datasets and policies remain tightly coupled to specific hardware embodiments,
+                                        which limits cross-platform generalization. As a result, platforms for which
+                                        data are substantially harder to collect and far less publicly available than
+                                        for wheeled robots --- such as legged robots --- remain chronically
+                                        under-represented, aggravating the dataset imbalance across robot morphologies.
+                                    </p>
+                                    <p><a class="more-link" href="#"><i
+                                                class="fas fa-external-link-alt"></i>Under review</a></p>
+                                </div>
+                            </div>
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm"
+                                        src="assets/images/projects/guideDog.png" alt="GuideDog" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://arxiv.org/abs/2503.12844"
+                                            target="_blank">GuideDog: A Real-World Egocentric Multimodal Dataset for
+                                            Blind and Low-Vision Accessibility-Aware Guidance</a></h3>
+                                    <p class="mb-2">Junhyeok Kim*, Jaewoo Park*, <strong>Junhee Park</strong>, Sangeyl
+                                        Lee, Jiwan Chung,
+                                        Jisung Kim, Ji Hoon Joung and Youngjae Yu.(2025)</p>
+                                    <p class="mb-2" style="font-size: small;">Mobility remains a significant challenge
+                                        for the 2.2 billion people
+                                        worldwide affected by blindness and low vision (BLV), with 7% of visually
+                                        impaired individuals experiencing falls at least once a month. While recent
+                                        advances in Multimodal Large Language Models (MLLMs) offer promising
+                                        opportunities
+                                        for BLV assistance, their development has been hindered by limited datasets.</p>
+                                    <p><a class="more-link" href="https://arxiv.org/abs/2503.12844" target="_blank"><i
+                                                class="fas fa-external-link-alt"></i>arXiv:2503.12844</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <h5><span class="place">Multimodal Intelligence Research Lab </span><span class="place"
+                                    style="font-weight:100">| Advisor: Youngjae Yu</span> </h5>
+                            <div class="item">
+                                <h3 class="title">Graduate Researcher - <span class="year">(Dec 2024 – Present)</span>
+                                </h3>
+                                <p><strong>CANVAS2: Scale-up pipeline to extend COMMAND dataset to Quadrupeds using
+                                        CANVAS</strong><br>
+                                    Sungwoong Kim, Minseo Kim, <strong>Junhee Park</strong>, Siyeol Kim, Jihwan Yu</p>
+                                <ul>
+                                    <li>
+                                        Reconstructed the CANVAS (previous work) VLA pipeline and redesigned the
+                                        architecture based on Qwen2.5-VL.
+                                    </li>
+                                    <li> Integrated real-time communication with Unitree Go2 via ROS2 topics, using
+                                        camera and sensor (coordinate) inputs for multimodal processing. </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <p><strong>GuideDog: A Real-World Multimodal Dataset for Blind and Low-Vision
+                                        Accessibility-Aware Guidance</strong><br>
+                                    Junhyeok Kim, Jaewoo Park, <strong>Junhee Park</strong>, Sanyeol Lee</p>
+                                <ul>
+                                    <li>Distilled global BLV association guidelines into a structured, machine-readable
+                                        format for VLM integration.</li>
+                                    <li> Built and managed Label Studio pipelines for high-quality description
+                                        generation,
+                                        including IAA validation.</li>
+                                </ul>
+                            </div>
+                            <hr><br>
+
+                            <h5><a href="https://xl8.ai/">XL8.ai</a> <span class="place" style="font-weight:100"> | U.S.
+                                    Headquarter</span> </h5>
+                            <div class="item">
+                                <h3 class="title">AI Research Intern - <span class="year">(Oct 2023 – Apr 2024)</span>
+                                </h3>
+                                <p><strong>AI-driven media localization with context-aware translations</strong></p>
+                                <ul>
+                                    <li>Optimized ParaCrawl Dataset: Filtered high-quality translation data using LaBSE
+                                        with language-specific thresholds, automating the process and uploading to AWS
+                                        S3.</li>
+                                    <li>Enhanced Translation Accuracy: Improved translation accuracy for German,
+                                        Portuguese, and Vietnamese by incorporating number word augmentation and adding
+                                        targeted test cases.</li>
+                                    <li>Integrated Translation Evaluation: Combined translation codes from XL8, Google,
+                                        and DeepL, evaluating with BLEU, COMET, and MetricX23.</li>
+                                    <li>Developed Transliteration Module: Integrated English-to-Korean and Japanese
+                                        transliteration modules based on comparative analysis.</li>
+                                </ul>
+                            </div>
+
+                            <hr><br>
+
+                            <h5><span class="place">RealSmart Corporation</span></h5>
+                            <div class="item">
+                                <h3 class="title">Software Engineer - <span class="year">(Nov 2020 – Dec 2021)</span>
+                                </h3>
+                                <p><strong>OMR-based testing, survey analysis, and smart tools for education and
+                                        business</strong></p>
+                                <ul>
+                                    <li>Developed the WordTEST Android app using JAVA and MSSQL with optimized DB
+                                        performance.</li>
+                                    <li>Managed and maintained 90+ MSSQL databases, performing performance tuning,
+                                        backups, and security operations.</li>
+                                    <li>Refined a VSTO-based reporting program widely adopted in education and
+                                        enterprise
+                                        sectors.</li>
+                                    <li>Enhanced a Windows application used by 500+ academies, 200+ universities, and
+                                        300+
+                                        companies including Samsung and Seoul National University.</li>
+                                </ul>
+                            </div>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
 
 
-        <!-- Education Section -->
-        <section id="education" class="py-8 px-6 md:px-8 lg:px-10">
-            <h2 class="section-title">Education</h2>
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Projects</h2>
+                        <div class="content">
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Yonsei University</h3>
-                <p class="text-lg font-medium text-gray-700">Integrated M.S./Ph.D in Artificial Intelligence</p>
-                <p class="text-md text-gray-600">Mar.2025 – Present</p>
-                <p class="text-md text-gray-600">GPA: 4.05/4.3</p>
+                            <div class="item">
+                                <h3 class="title">
+                                    GemmaPaperQA - Google Machine Learning Bootcamp
+                                    <a href="https://huggingface.co/halyn/gemma2-2b-it-finetuned-paperqa"
+                                        target="_blank">
+                                        <span class="badge badge-theme">Hugging Face</span>
+                                    </a>
+                                </h3>
+                                <p class="summary">Jul.2024 – Oct.2024</p>
+                                <ul>
+                                    <li>Developed a QA system for academic papers using the Gemma2 open-source
+                                        model and LangChain.</li>
+                                    <li>Fine-tuned the model with LoRA to significantly improve performance.</li>
+                                </ul>
+                            </div>
 
-            </div>
+                            <div class="item">
+                                <h3 class="title">ISIC 2024: Skin Cancer Detection with 3D-TBP - Kaggle</h3>
+                                <p class="summary">Aug.2024 – Oct.2024</p>
+                                <ul>
+                                    <li>Developed a skin cancer detection model from 3D body images using an ensemble of
+                                        LGBM, XGBoost, and CatBoost.</li>
+                                    <li>Achieved Top 15% performance in the competition.</li>
+                                </ul>
+                            </div>
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Hanyang Cyber University</h3>
-                <p class="text-lg font-medium text-gray-700">B.S. in Applied Software Engineering</p>
-                <p class="text-md text-gray-600">Mar.2020 – Feb.2024</p>
-                <p class="text-md text-gray-600">GPA: 4.07/4.5</p>
-            </div>
-        </section>
+                            <div class="item">
+                                <h3 class="title">MATEY (Friend matching app for co-purchase) - Silicon Valley Bootcamp
+                                </h3>
+                                <p class="summary">San Francisco, CA | Jun.2023 – Sep.2023</p>
+                                <ul>
+                                    <li>Presented the project at Google’s San Francisco office and won <strong>1st
+                                            place</strong> among participating bootcamp teams.</li>
+                                    <li>Led a team of six engineers to develop a friend-matching app based on shared
+                                        purchasing preferences.</li>
+                                    <li>Developed a user similarity algorithm using Word2Vec and created visual designs
+                                        using the generative AI tool Midjourney.</li>
+                                </ul>
+                            </div>
 
-        <!-- Publications Section -->
-        <section id="Publications" class="py-8 px-6 md:px-8 lg:px-10  bg-gray-50">
-            <h2 class="section-title">Publication</h2>
+                            <div class="item">
+                                <h3 class="title">Deepfake Detection Challenge - Kaggle</h3>
+                                <p class="summary">Jan.2020 – Mar.2020</p>
+                                <ul>
+                                    <li>Developed a deepfake detection model using Tensorflow and Pytorch, integrating
+                                        CNN
+                                        and RNN models.</li>
+                                    <li>Improved model performance by 52.3%, managing a team of 7 engineers.</li>
+                                </ul>
+                            </div>
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h5 class="text-xl font-family text-gray-900">Junhyeok Kim*, Jaewoo Park*, <b>Junhee Park</b>, Sangeyl
-                    Lee, Jiwan Chung, Jisung
-                    Kim, Ji Hoon Joung, Youngjae Yu. <a href="https://arxiv.org/abs/2503.12844"
-                        class="text-blue-600 hover:underline" target="_blank">GuideDog: A Real-World Egocentric
-                        Multimodal Dataset for
-                        Blind and Low-Vision Accessibility-Aware Guidance</a>, <i>arXiv:2503.12844</i>, 2025</h5>
-            </div>
-        </section>
+                            <div class="item">
+                                <h3 class="title">
+                                    Benchmarking CNN Models for Image Classification Performance
+                                    <a href="https://docs.google.com/presentation/d/1-pY5OLVmPyES83dIccfho1gL5vlFE2Gh971OejTv5AE/edit?usp=sharing"
+                                        target="_blank">
+                                        <span class="badge badge-theme">Benchmark</span>
+                                    </a>
+                                </h3>
+                                <p class="summary">Nov.2018 – Apr.2019</p>
+                                <ul>
+                                    <li>Evaluated 13 CNN models for image classification, achieving a 97.7% accuracy
+                                        with
+                                        ResNet-152.</li>
+                                </ul>
+                            </div>
 
-        <!-- Professional & Research Experience Section -->
-        <section id="experience" class="py-8 px-6 md:px-8 lg:px-10">
-            <h2 class="section-title">Experience</h2>
+                            <div class="item">
+                                <h3 class="title">Oneday Voca - English Vocabulary Learning App (Android)</h3>
+                                <p class="summary">Jul.2018 – Oct.2018</p>
+                                <ul>
+                                    <li>Developed an English vocabulary app with OCR using OpenCV and Vision API.</li>
+                                    <li>Built end-to-end server infrastructure on AWS EC2, Apache, PHP, MySQL, and
+                                        Linux.</li>
+                                </ul>
+                            </div>
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h4 class="text-xl font-semibold text-gray-900 mb-4 ">Multimodal Intelligence Research Lab (Advisor: Youngjae Yu) </h4>
+                            <!-- <a class="btn btn-cta-secondary" href="#">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a> -->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
 
-                <div class="mb-6">
-                    <h5 class="text-lg font-semibold text-gray-900">CANVAS2: Scale-up pipeline to extend COMMAND dataset
-                        to Quadrupeds using CANVAS</h5>
-                    <p class="text-md text-gray-600 mb-2">Collaborators: Sungwoong Kim, Minseo Kim, Junhee Park, Siyeol
-                        Kim, Jihwan Yu | Mar 2025 – Present</p>
-                    <p class="text-md text-gray-600 mb-1">Contribution</p>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li class="mb-1">Reconstructed the
-                            <a href="https://arxiv.org/abs/2410.01273" class="text-blue-600 hover:underline"
-                                target="_blank" target="_blank">CANVAS(previous work)</a>
-                            VLA pipeline and redesigned the architecture based on Qwen2.5-VL.
-                        </li>
-                        <li class="mb-1">Integrated real-time communication with Unitree Go2 via ROS2 topics, using
-                            camera and sensor (coordinate) inputs for multimodal processing.</li>
-                    </ul>
-                </div>
 
-                <div class="mb-6">
-                    <h5 class="text-lg font-semibold text-gray-900">GuideDog: A Real-World Multimodal Dataset for Blind
-                        and Low-Vision Accessibility-Aware Guidance</h5>
-                    <p class="text-md text-gray-600 mb-2">Collaborators: Junhyeok Kim, Jaewoo Park, Junhee Park, Sanyeol
-                        Lee | Dec 2024 – Mar 2025</p>
-                    <p class="text-md text-gray-600 mb-1">Contribution</p>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li class="mb-1">Distilled global BLV association guidelines into a structured, machine-readable
-                            format for VLM integration.</li>
-                        <li class="mb-1">Built and managed Label Studio pipelines for high-quality description
-                            generation, including IAA validation.</li>
-                    </ul>
-                </div>
-            </div>
+                <!-- <section class="github section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My GitHub</h2>
+                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                        
+                        <div id="github-graph" class="github-graph">
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">XL8 - AI Research Intern</h3>
-                <p class="text-lg font-medium text-gray-700">U.S. Headquarter</p>
-                <p class="text-md text-gray-600 mb-1">AI-driven media localization with context-aware translations | Oct.2023 – Apr.2024</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Optimized ParaCrawl Dataset: Filtered high-quality translation data using LaBSE
-                        with language-specific thresholds, automating the process and uploading to AWS S3.</li>
-                    <li class="mb-1">Enhanced Translation Accuracy: Improved translation accuracy for German,
-                        Portuguese, and Vietnamese by incorporating number word augmentation and adding various targeted
-                        test cases.</li>
-                    <li class="mb-1">Integrated Translation Evaluation: Combined translation codes from XL8, Google, and
-                        DeepL, and evaluated performance using BLEU, COMET, and MetricX23 to improve quality
-                        assessments.</li>
-                    <li class="mb-1">Developed Transliteration Module: Integrated effective transliteration modules for
-                        English to Korean and Japanese after comparative analysis.</li>
-                </ul>
-            </div>
+                        </div>
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">RealSmart Corporation - Software Engineer</h3>
-                <p class="text-lg font-medium text-gray-700">Seoul, Korea</p>
-                <p class="text-md text-gray-600 mb-2">OMR-based testing, survey analysis, and smart tools for education and business | Nov.2020 – Dec.2021</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a WordTEST Android app using JAVA and MSSQL with high-performance
-                        database integration.</li>
-                    <li class="mb-1">Managed and optimized over 90 MSSQL databases, handling performance tuning,
-                        backups, and security.</li>
-                    <li class="mb-1">Refined a VSTO-based reporting program used by academic and private institutions.
-                    </li>
-                    <li class="mb-1">Enhanced a Windows application, adopted by 500+ academies, 200+ universities, and
-                        300+ businesses, including Samsung and Seoul National University.</li>
-                </ul>
-            </div>
-        </section>
+                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
+                        //Usage: https://caseyscarborough.com/projects/github-activity/                       
+                        <div id="ghfeed" class="ghfeed">
+                        </div>
+                        
+                    </div>
+                </section> -->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt" stu></i><span
+                                        class="sr-only">Location:</span>Seoul,
+                                    South Korea</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
+                                        href="#">juni5184@yonsei.ac.kr</a></li>
+                                <!-- <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
-            <h2 class="section-title">Projects</h2>
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> M.S./Ph.D in Artificial
+                                    Intelligence</h3>
+                                <h4 class="university">Yonsei University<span class="year"> (2025.3-Present)</span>
+                                </h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> B.S. in Applied Software
+                                    Engineering</h3>
+                                <h4 class="university">Hanyang Cyber University <span class="year">
+                                        (2020.3-2024.2)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">GemmaPaperQA - Google Machine Learning Bootcamp
-                    <a href="https://huggingface.co/halyn/gemma2-2b-it-finetuned-paperqa"
-                        class="text-blue-600 hover:underline" target="_blank">[Hugging Face]</a>
-                </h3>
-                <p class="text-md text-gray-600 mb-2">Jul.2024 – Oct.2024</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a QA system for academic papers using the Gemma2 open-source model and
-                        LangChain.</li>
-                    <li class="mb-1">Fine-tuned the model with LoRA to significantly improve performance.</li>
-                </ul>
-            </div>
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <!-- <p class="intro">
+                                    Intro about your skills goes here. Keep the list lean and only show your primary
+                                    skillset. You can always provide a link to your Linkedin or Github profile so people can
+                                    get more info there.</p> -->
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">ISIC 2024: Skin Cancer Detection with 3D-TBP - Kaggle
-                </h3>
-                <p class="text-md text-gray-600 mb-2">Aug.2024 – Oct.2024</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a skin cancer detection model from 3D body images using an ensemble of
-                        LGBM, XGBoost, and CatBoost.</li>
-                    <li class="mb-1">Achieved Top 15% performance in the competition.</li>
-                </ul>
-            </div>
+                            <div class="skillset">
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">MATEY (Friend matching app for co-purchase) - Silicon
-                    Valley Bootcamp</h3>
-                <p class="text-md text-gray-600 mb-2">San Francisco, CA | Jun.2023 – Sep.2023</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Presented the project at Google’s San Francisco office and won <strong>1st
-                            place</strong> among
-                        participating bootcamp teams.</li>
-                    <li class="mb-1">Led a team of six engineers to develop a friend-matching app based on shared
-                        purchasing preferences.</li>
-                    <li class="mb-1">Developed a user similarity algorithm using Word2Vec and created visual designs
-                        using the generative AI tool Midjourney.</li>
-                </ul>
-            </div>
+                                <div class="item">
+                                    <h3 class="level-title">Python &amp; PyTorch
+                                        <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="Used extensively in robotics and AI research. Experienced in deep learning, reinforcement learning, and dataset preprocessing.">
+                                            <i class="fas fa-info-circle"></i>Expert</span>
+                                    </h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 95%"
+                                            aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Deepfake Detection Challenge - Kaggle</h3>
-                <p class="text-md text-gray-600 mb-2">Jan.2020 – Mar.2020</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed a deepfake detection model using Tensorflow and Pytorch, integrating CNN
-                        and RNN models.</li>
-                    <li class="mb-1">Improved model performance by 52.3%, managing a team of 7 engineers.</li>
-                </ul>
-            </div>
+                                <div class="item">
+                                    <h3 class="level-title">Linux
+                                        <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="Developed real-time quadruped robot systems with ROS2 and C++. Familiar with sensor integration, motion control, and DDS-based pub-sub.">
+                                            <i class="fas fa-info-circle"></i>Advanced</span>
+                                    </h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 92%"
+                                            aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Benchmarking CNN Models for Image Classification
-                    Performance
-                    <a href="https://docs.google.com/presentation/d/1-pY5OLVmPyES83dIccfho1gL5vlFE2Gh971OejTv5AE/edit?usp=sharing"
-                        class="text-blue-600 hover:underline" target="_blank">[Benchmark]</a>
-                </h3>
-                <p class="text-md text-gray-600 mb-2">Nov.2018 – Apr.2019</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Evaluated 13 CNN models for image classification, achieving a 97.7% accuracy with
-                        ResNet-152.</li>
-                </ul>
-            </div>
+                                <div class="item">
+                                    <h3 class="level-title">Vision-Language Models
+                                        <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="Applied VLMs for robotic navigation and human interaction. Familiar with models like BLIP-2, Qwen-VL, and Video-LLaMA.">
+                                            <i class="fas fa-info-circle"></i>Advanced</span>
+                                    </h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 88%"
+                                            aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
 
-            <div class="mb-6 pb-4 border-b border-gray-200 last:border-b-0">
-                <h3 class="text-xl font-semibold text-gray-900">Oneday Voca - English Vocabulary Learning App (Android)
-                </h3>
-                <p class="text-md text-gray-600 mb-2">Jul.2018 – Oct.2018</p>
-                <ul class="list-disc pl-5 text-gray-700">
-                    <li class="mb-1">Developed an English vocabulary app with OCR using OpenCV and Vision API.</li>
-                    <li class="mb-1">Built end-to-end server infrastructure on AWS EC2, Apache, PHP, MySQL, and Linux.
-                    </li>
-                </ul>
-            </div>
-        </section>
+                                <div class="item">
+                                    <h3 class="level-title">Figma, HTML5, CSS3
+                                        <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="Built interactive UIs for research tools and visualization dashboards using React, HTML5, and MUI.">
+                                            <i class="fas fa-info-circle"></i>Proficient</span>
+                                    </h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 85%"
+                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
 
-        <!-- Skills Section -->
-        <section id="skills" class="py-8 px-6 md:px-8 lg:px-10">
-            <h2 class="section-title">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Frameworks & Libraries:</h3>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li>PyTorch, TensorFlow, ROS2</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Databases:</h3>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li>MSSQL, MySQL, SQLite</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Server & Cloud:</h3>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li>Linux, AWS EC2, S3, Apache, PHP</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Languages:</h3>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li>English (Proficient)</li>
-                        <li>Korean (Native)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                                <div class="item">
+                                    <h3 class="level-title">ROS2 &amp; C++
+                                        <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="Experienced in Linux-based robot development and using embedded devices (Jetson, Realsense, etc). Comfortable with system debugging.">
+                                            <i class="fas fa-info-circle"></i>Proficient</span>
+                                    </h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 82%"
+                                            aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
 
-        <!-- Awards & Honors Section -->
-        <section id="awards" class="py-8 px-6 md:px-8 lg:px-10 bg-gray-50">
-            <h2 class="section-title">Certificates</h2>
-            <ul class="list-disc pl-5 text-gray-700">
-                <li class="mb-1">TOEIC: <strong>920</strong> / 990 — ETS (Jun.2024)</li>
-                <li class="mb-1">AICE (AI Certificate for Everyone) Associate — KT & The Korea Economic Daily(Jul.2022)
-                    <ul class="list-circle pl-5 text-gray-600">
-                        <li>Data analysis, processing, and modeling using Tensorflow, Numpy, Pandas, Matplotlib, and
-                            Scikit-learn.</li>
-                    </ul>
-                </li>
-                <li class="mb-1">Tensorflow Developer Certificate — TensorFlow (May.2022)</li>
-            </ul>
-        </section>
+                            </div>
+                            <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
+                                    GitHub</a></p> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </aside>
 
-        <!-- Footer -->
-        <footer class="text-center text-gray-600 py-6 px-6 md:px-8 lg:px-10 border-t border-gray-200 mt-8">
-            <p>&copy; 2025 Junhee Park. All rights reserved.</p>
-        </footer>
-    </div>
+                <!-- <aside class="testimonials aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                </blockquote>                
+                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                            </div>
+                            
+                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            
+                        </div>
+                    </div>
+                </aside> -->
+
+
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Korean:</strong></span>
+                                    <span class="level">Native <br class="visible-xs" /><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Proficient<br class="visible-sm visible-xs" /><i
+                                            class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                            class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <!-- <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss"
+                                target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p>
+                        <div id="rss-feeds" class="content">
+
+                        </div>
+                    </div>
+                </aside> -->
+
+                <!-- <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2030</a> (San Francisco)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside> -->
+
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Certificates</h2>
+                        <div class="content">
+                            <ul class="list-unstyled mb-1">
+                                <li><a href="https://www.coursera.org/account/accomplishments/specialization/53RQX3P4TT08"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Deep Learning
+                                        Specialization</a></li>
+                                <li><a href="https://www.openbadge-global.com/ns/portal/openbadge/public/assertions/detail/OEx3M3FkMXd6RUJsd014OXBwZkJoUT09"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>AICE(AI Certificate for
+                                        Everyone) - Associate</a></li>
+                                <li><a href="https://www.credential.net/78d45d3e-e3b7-4d2e-b6ae-5eef5c4e4952#acc.vHS54zjw"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Tensorflow Developer
+                                        Certificate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+            </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a
+                    href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
+    <!-- github calendar plugin -->
+    <!-- <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script> -->
+    <!-- github activity plugin -->
+    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script> -->
+    <!-- custom js -->
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script>             -->
 </body>
 
 </html>
