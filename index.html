@@ -120,20 +120,17 @@
                                         src="assets/images/projects/guidedog.png" alt="GuideDog" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
-                                    <h2 class="title">ACL 2026 Main Conference</h2>
+                                    <h2 class="title highlight">ACL 2026 Main Conference</h2>
                                     <h3 class="title"><a href="https://arxiv.org/abs/2503.12844"
                                             target="_blank">GuideDog: A Real-World Egocentric Multimodal Dataset for
                                             Blind and Low-Vision Accessibility-Aware Guidance</a></h3>
                                     <p class="mb-2">Junhyeok Kim*, Jaewoo Park*, <strong>Junhee Park</strong>, Sangeyl
                                         Lee, Jiwan Chung,
                                         Jisung Kim, Ji Hoon Joung and Youngjae Yu.(2025)</p>
-                                    <p class="mb-2" style="font-size: small;">Mobility remains a significant challenge
-                                        for the 2.2 billion people
-                                        worldwide affected by blindness and low vision (BLV), with 7% of visually
-                                        impaired individuals experiencing falls at least once a month. While recent
-                                        advances in Multimodal Large Language Models (MLLMs) offer promising
-                                        opportunities
-                                        for BLV assistance, their development has been hindered by limited datasets.</p>
+                                    <p class="mb-2" style="font-size: small;">We introduce GuideDog, a novel multimodal
+                                        egocentric accessibility-aware guide dataset containing 22K image description
+                                        pairs (including 2K human-annotated pairs) that capture diverse real-world
+                                        scenes from the viewpoint of a pedestrian.</p>
                                     <p><a class="more-link" href="https://arxiv.org/abs/2503.12844" target="_blank"><i
                                                 class="fas fa-external-link-alt"></i>arXiv:2503.12844</a></p>
                                 </div>
@@ -148,23 +145,19 @@
                                             Navigation Data Generation Pipeline</a></h3>
                                     <p class="mb-2">Sungwoong Kim, Minseo Kim, <strong>Junhee Park</strong>, Siyeol Kim,
                                         Jihwan Yu and Youngjae Yu.(2025)</p>
-                                    <p class="mb-2" style="font-size: small;">Research in robot navigation has been
-                                        accelerating rapidly with the advent of vision–language models (VLMs) that can
-                                        explicitly reason about the diverse variables present in real-world driving
-                                        scenarios. Despite the growing success of AI-based robot navigation, existing
-                                        datasets and policies remain tightly coupled to specific hardware embodiments,
-                                        which limits cross-platform generalization. As a result, platforms for which
-                                        data are substantially harder to collect and far less publicly available than
-                                        for wheeled robots such as legged robots remain chronically under-represented,
-                                        aggravating the dataset imbalance across robot morphologies. To resolve this
-                                        data discrepancy, we propose XNav-Pipe, a 2-staged synthetic data generation
-                                        framework that expands specific-robot driving datasets to general-purpose
-                                        navigation across robot types.</p>
+                                    <p class="mb-2" style="font-size: small;">XNav-Pipe, a 2-staged synthetic data
+                                        generation framework that expands specific-robot driving datasets to
+                                        general-purpose navigation across robot types. In Stage 1, we imitate prior
+                                        wheeled-robot driving behaviors using lightweight PPO agents to re-generate data
+                                        on novel platforms. In Stage 2, we leverage commonsense-aware VLMs to synthesize
+                                        new navigation behaviors from given instructions and trajectories. Our
+                                        framework, built on NVIDIA Isaac Lab, allows scalable and diverse simulation of
+                                        robot navigation across morphologies.</p>
                                     <!-- <p><a class="more-link" href="#"><i
                                                 class="fas fa-external-link-alt"></i>Under review</a></p> -->
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </section>
@@ -183,19 +176,6 @@
                             <div class="item">
                                 <h3 class="title">Research Intern - <span class="year">(Dec. 2024 – August. 2025)</span>
                                 </h3>
-                                <p><strong>XNav-Pipe: Cross-Platform Robot
-                                        Navigation Data Generation Pipeline</strong><br>
-                                    Sungwoong Kim, Minseo Kim, <strong>Junhee Park</strong>, Siyeol Kim, Jihwan Yu</p>
-                                <ul>
-                                    <li>
-                                        Reconstructed the CANVAS (previous work) VLA pipeline and redesigned the
-                                        architecture based on Qwen2.5-VL.
-                                    </li>
-                                    <li> Integrated real-time communication with Unitree Go2 via ROS2 topics, using
-                                        camera and sensor (coordinate) inputs for multimodal processing. </li>
-                                </ul>
-                            </div>
-                            <div class="item">
                                 <p><strong>GuideDog: A Real-World Multimodal Dataset for Blind and Low-Vision
                                         Accessibility-Aware Guidance</strong><br>
                                     Junhyeok Kim, Jaewoo Park, <strong>Junhee Park</strong>, Sanyeol Lee, Jiwan Chung
@@ -206,6 +186,17 @@
                                     <li> Built and managed Label Studio pipelines for high-quality description
                                         generation,
                                         including IAA validation.</li>
+                                </ul>
+                                <p><strong>XNav-Pipe: Cross-Platform Robot
+                                        Navigation Data Generation Pipeline</strong><br>
+                                    Sungwoong Kim, Minseo Kim, <strong>Junhee Park</strong>, Siyeol Kim, Jihwan Yu</p>
+                                <ul>
+                                    <li>
+                                        Reconstructed the CANVAS (previous work) VLA pipeline and redesigned the
+                                        architecture based on Qwen2.5-VL.
+                                    </li>
+                                    <li> Integrated real-time communication with Unitree Go2 via ROS2 topics, using
+                                        camera and sensor (coordinate) inputs for multimodal processing. </li>
                                 </ul>
                             </div>
                             <hr><br>
@@ -386,15 +377,15 @@
                 </aside><!--//section-->
 
                 <!-- <aside class="skills aside section"> -->
-                    <!-- <div class="section-inner shadow-sm rounded"> -->
-                        <!-- <h2 class="heading">Skills</h2>
+                <!-- <div class="section-inner shadow-sm rounded"> -->
+                <!-- <h2 class="heading">Skills</h2>
                         <div class="content"> -->
-                            <!-- <p class="intro">
+                <!-- <p class="intro">
                                     Intro about your skills goes here. Keep the list lean and only show your primary
                                     skillset. You can always provide a link to your Linkedin or Github profile so people can
                                     get more info there.</p> -->
 
-                            <!-- <div class="skillset">
+                <!-- <div class="skillset">
 
                                 <div class="item">
                                     <h3 class="level-title">Python &amp; PyTorch
@@ -457,11 +448,11 @@
                                 </div>
 
                             </div> -->
-                            <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
+                <!-- <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
                                     GitHub</a></p> -->
-                            <!-- </div> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
                 <!-- </aside> -->
 
                 <!-- <aside class="testimonials aside section">
