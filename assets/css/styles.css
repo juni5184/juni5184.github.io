@@ -23,6 +23,14 @@ h1, h2, h3, h4, h5, h6 {
 h2.highlight {
   color:#f5887a
 }
+.projects .item .title.highlight a,
+h2.highlight a {
+  color: #f5887a;
+}
+.projects .item .title.highlight a:hover,
+h2.highlight a:hover {
+  color: #e36a5a;
+}
 
 a {
   color: #4169E1;
